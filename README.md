@@ -10,9 +10,9 @@ This project provides the following services to it's users:
 ### services Free for public visitors:
 
 ##### Evaluate the connection security:
-	This tool evaluats two main aspects of the internet connection for the current user using the system which are:
+	This tool evaluats two main aspects of the internet connection for the current user using our system, which are:
 		-> security level: this shows if your connnection is secure or not (based on proxy/vpn relays existance)
-		-> risk level: this tells you the likelyhood of you being flagged by secure web services (like: bank website, goverment sites etc...). this is true for the webservices tht use fraud 				protection measures.
+		-> risk level: this tells you the likelyhood of you being flagged by secure web services (like: bank website, goverment sites etc...). this is true for the webservices that use fraud 				protection measures.
 
 ##### -> Target Precise information gathering:
 	This tool permitts you to gether various informations about your target, this uses the surper API from google to execute search operations, and return breaif results (on the Google search engine)
@@ -32,7 +32,7 @@ This project provides the following services to it's users:
 
 ### Private for registered users services:
 ##### In this service we show data provided to us by the public API of cve-search and it is operated by CIRCL (Computer Incident Response Center Luxembourg).
-#### registered users can benifit from following services: 
+#### registered users can benefit from following services: 
 
 ##### -> Explore the vendors that have security vulnerabilities discovered in them. (both now and in and in the past).
 
@@ -69,7 +69,7 @@ This project provides the following services to it's users:
 	python,
 	flask,
 	MongoDb / Mysql, [was intended for usser auth data storage, but not implemented yet, planned to be implemented in later versions]
-	JSON storage (file). [as an alternative storage system for hosts that prefet to not have a database system installed]
+	JSON storage (file). [as an alternative storage system for hosts that prefer to not have a database system installed]
 ##### Front-end technologies:
 	React,
 	Javascript / typescript,
@@ -77,12 +77,12 @@ This project provides the following services to it's users:
 ##### The back-end folder is under: cyber_scan_b-e/
 ##### The front-end folder is under: cyber_sca_f-e/
 #### User Envirement variables:
-	This application required three invarement variables to function normally. these variables hilds the deffirent api keys that goes with each request:
+	This application required three invarement variables to function normally. these variables holds the deffirent api keys that goes with each request:
 	VIEW_DNS_KEY => https://viewdns.info
 	SERPER_API_KEY => google.serper.dev (https://serper.dev [as a web site])
 	IP_HUB_KEY => http://iphub.info/
 
-	You can set these variables by creating an account on theire respective websites then get your key and use this command:
+	You can set these variables by creating an account on their respective websites then get your key and use this command:
  	$ export [variable_name]=[variable value (make sure to use '' (as these values are strings, and no space around the '='))] 
 
 #### Note: Because of time constraints I haven't implemented a real authentication system, this app can be accessed via these credentials:</span>
